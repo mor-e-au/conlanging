@@ -1,0 +1,39 @@
+Class c {b, d, g, p, t, k, x, s, z, ẓ, ž, ź, š, ś, pʰ, tʰ, kʰ, ćʰ, cʰ, čʰ, qʰ, q, w, r, l, ł, y, m, n, ń, ş, ç, ƶ, c}
+Class v {a, e, o, ā, ē, ō, i, ä, ü}
+Class s {s, ş, ç, ƶ, c, z}
+
+v:
+    ă => * // $ @c? @c? _ $
+
+c:
+    {ś, š, ć, č, ź, ž} => {ş, ş, ç, ç, ƶ, ƶ}
+    {dz, ts} => {z, c}
+    {çs, şs} => {ç, ş}
+    then: tş => ç
+    ń => n
+    dss => c
+    then: ss => x
+    kx => x
+    w => u / {$, @c} _ {$, @c}
+
+n-strengthening:
+    {nş, nç, np, nd, nt} => {ç, ƶ, b, dd, d}
+    then: dd => d / $ _
+    {mk} => {g}
+
+v-w-smoothing:
+    {iw, äw, ewe, ew, üw} => {üü, ö, öö, ö, üü} / _ {$, @c}
+
+c-smoothing:
+    r @v r => rr / @v _ @v
+    then: rr => l
+    nc => nac / $ _ $
+
+p:
+    @v => * / @v @s _ @c @v
+    @v => * / @v @c _ @s @v
+    çs => ç / $ _
+    çş => ç
+    zt => st
+    then: sz => st
+    gy => ƶ

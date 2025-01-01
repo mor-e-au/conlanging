@@ -1,0 +1,37 @@
+Class c {b, d, g, p, t, k, x, s, z, ẓ, ž, ź, š, ś, pʰ, tʰ, kʰ, ćʰ, cʰ, čʰ, qʰ, q, w, r, l, ł, h, ʼ}
+Class v {a, e, o, ā, ē, ō, ə}
+
+v:
+    {a, e, o, ā, ē, ō} => {e, ə, a, a, e, o}
+
+pre-c:
+    {ẓ, ź, ž} => {d, y, d}
+c:
+    {x, h} => *
+    ł => x
+    then: {m, b} => {b, w} / $ _ {ə, o, a}
+    g => ŋ / @v _ @v
+    {tʰ, pʰ, kʰ, cʰ, čʰ, ćʰ, qʰ} => {d, b, g, dz, dž, dź, g} / _ $
+    {s, ś, š} => {*, h, s}
+    {c, ć, č} => {s, ś, š}
+    ğ => x
+    q => ʼ
+    then: ʰ => * / {s, ś, š, ʼ, h} _
+
+vowel-smoothing:
+    əe => ā
+    əə => ē
+    ee => ē
+    oa => ō
+    {eo, ao} => ā
+    ae => ē
+
+vowel-endings:
+    {i, e} => {ʲ, a} / _ $ // $ @c @c? _ $
+
+silibant:
+    {r, n} => {a, o} / {$, @c} _ {$, @c}
+
+consonant-smoothing:
+    {sś, śs, sš, šs} => š
+    ʼ => * / $ _

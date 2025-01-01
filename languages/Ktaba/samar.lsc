@@ -1,0 +1,18 @@
+Class c {b, d, g, p, t, k, x, s, z, ẓ, ž, ź, š, ś, pʰ, tʰ, kʰ, ćʰ, cʰ, čʰ, qʰ, q, w, r, l, ł, ʼ, ŋ, č}
+Class v {a, e, o, ā, ē, ō}
+
+v:
+    {ea, ei} => {ee, ii}
+
+c:
+    w => v
+    ŋ => n
+    i => ʲ / @c _ @v
+    y => j
+    l => * / _ $
+    s => t / _ $
+    th => s
+    {šc, sč, šč} => št
+
+palatalization:
+    {č, c, s, š, t} => {ć, ć, ś, ś, ć} / _ ʲ

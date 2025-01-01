@@ -1,0 +1,9 @@
+Class c {m, n, ń, ŋ, p, b, t, d, ḍ, c, j, k, ǵ, g, q, s, ś, h, y, r, l, ĺ, č, ñ}
+Class v {a, ä, i, ö, u, ü, o, ē, ī, e, é, í}
+
+c:
+    {ǵ, ḱ} => {g, k}
+    kw => k
+    w => v
+    @c$1 y => $1 $1
+    č => ch

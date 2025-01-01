@@ -1,0 +1,20 @@
+Class c {b, d, g, p, t, k, x, s, z, ẓ, ž, ź, š, ś, pʰ, tʰ, kʰ, ćʰ, cʰ, čʰ, qʰ, q, w, r, l, ł, ṗ, ṭ, x̣, l}
+Class v {a, e, o, ā, ē, ō, æ, ï, u, ə}
+
+v:
+    {i, e} => {ije, je} / $ @c? @c? _ @c
+    i => e / _ $
+    ye => ej
+
+c:
+    q => g
+    s => * / _ $
+    then: {b, d, g, z} => {p, t, k, s} / _ $
+    h => *
+    v => o / _ $
+    y => j
+    zs => ž
+
+p:
+    ee => aj
+    aji => ije
