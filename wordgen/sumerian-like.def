@@ -1,0 +1,8 @@
+I = m:1 n:1 ĝ:1 b:1 p:1 d:1 t:1 g:1 k:1 s:1 š:1 h:1 r:1 l:1 z:1
+M = m:1 n:1 ĝ:1 b:1 p:1 d:1 t:1 g:1 k:1 s:1 š:1 h:1 r:1 l:1 z:1 mm:1 rb:1 rp:1 nn:1 rd:1 rt:1 rk:1 šš:1 ll:1 šm:1 šn:1 šb:1 šp:1 št:1 šd:1 šg:1 šk:1 nd:1 mb:1 nz:1 bb:1 pp:1 dd:1 tt:1 kk:1 gg:1 ss:1
+F = n:1 r:1 l:1 m:1 s:1 k:1 d:1 b:1 ĝ:1 z:1
+V = a:1 e:1 i:1 u:1
+
+random-rate: 50
+
+words: I?VV?MVF? I?VV?MVMVF? I?VMVV?F? I?VMVMVV?F?

@@ -1,0 +1,10 @@
+Class c {b, d, g, p, t, k, s, x, z, h, r, l, n, m, j}
+Class v {a, e, i, o, u}
+
+v:
+    {ai, ei, oi, ui} => {ī, ē, oñ, uñ}
+    {ea, oa, ua} => {ie, ō, ū}
+    {au, eu} => {av, ev}
+
+c:
+    {tx, x, tz, s} => {ts, s, š, z}
