@@ -1,0 +1,32 @@
+Class c {b, d, g, p, t, k, s, z, ŕ, ś, ph, th, kh, v, r, n, m, l, f, h, ř, y, ç, j, x}
+Class v {a, e, i, u, ë, o, ē, ī, ą, ę, į, ǫ, ų, ь, é, è, à, â, ô, ù}
+
+v:
+    {ą, ę, į, ǫ, ų} => {â, a, é, ô, eu}
+    {ā, ē, ī, ō, ū} => {è, é, i, à, ou}
+    ь => a
+
+c:
+    h => ù / @v _ $
+    then: h => *
+    j => y
+    ś => x
+    v => h
+    then: h => * / _ $
+    ř => h
+    tk => x
+    z => ç
+
+v-length:
+    @v$1 => $1 $1 / _ @c @c? {o, u} $
+    then: {o, u} => * / @c _ $ // $ @c _ $
+
+cons-shift:
+    {b, d, g, p, t, k, xt, xk, xp} => {v, dh, y, b, d, g, t, k, p}
+
+p:
+    b => ù / _ $
+    {n, m} => â / @c _ @c
+    euu => eû
+    au => ô
+    then: ôu => ôô

@@ -1,0 +1,5 @@
+Class c {p, t, k, b, d, g, h, r, z, s, n, m, f, w}
+Class v {a, e, i, o, u}
+
+c:
+    re => e / _ $

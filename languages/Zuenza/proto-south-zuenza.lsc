@@ -1,0 +1,20 @@
+Class c {b, d, g, p, t, k, s, z, ŕ, ś, ph, th, kh, v, r, n, m, l, f, h, ř}
+Class v {a, e, i, u, ë, o, ē, ī, ą, ę, į, ǫ, ų, ь}
+
+pre:
+    ë => *
+
+v:
+    {ai, ei, au, eu} => {ē, ī, o, ë}
+    {ua, ue} => {o, a}
+    then: i => ь / @c _ $ // $ @c _ $
+
+c:
+    {s, ś, ŕ} => {h, s, ś}
+    rr => ř
+    {kh, ph, th} => {ś, f, s}
+    z => t / @c _
+
+nasal:
+    {a, e, i, o, u} {n, m} => {ą, ę, į, ǫ, ų} * / _ {@c, $}
+    {ē, ī} {n, m} => {ęę, įį} * / _ {@c, $}

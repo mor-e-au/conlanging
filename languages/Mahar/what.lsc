@@ -1,0 +1,61 @@
+Class c {p, t, c, b, d, g, ś, s, r, l, n, m, b, h, β, ɣ, θ, k}
+Class v {a, e, i, u, o, ā, ē, ī, ō, ū, õ, ĩ, ẽ, ã}
+
+pre:
+    a => * / @v @c _ @c @v
+
+v:
+    a => * / @v @c? @c _ $
+    {a, e, i, u} => {o, i, a, e}
+    {ia} => {ai}
+    then: oe => ve
+    then: eo => ya
+    then: oa => a
+
+c:
+    {c, g} => {ch, j} / _ {i, e}
+    then: c => k // _ h
+    {o, i, a, e} => {õ, ĩ, ã, ẽ} / _ {n, m} {@c, $}
+    then: {n, m} => * / @v _ {@c, $}
+    h => * / _ y
+    rr => l
+    ś => sh
+    then: shsh => sh
+    c => t / _ $
+    ps => v
+    ss => sh
+    f => ph
+
+p:
+    {es, os} => {*, o} / @c _ $
+    {sp, st, sk, sch} => {ph, th, kh, chh}
+    ao => ō
+    ai => ē
+    hv => ph
+    then: {o, i, a, e} => {õ, ĩ, ã, ẽ} / _ {n, m} {@c, $}
+    then: {n, m} => * / @v _ {@c, $}
+    then: aẽ => ẽẽ
+    ae => ē
+    then: iã => yã
+    ls => th
+    as => * / _ $
+    ia => ya
+    ie => ye
+    ei => ya
+    ll => ñ
+    aa => ā
+    ln => ñ
+    ea => ā
+    ks => kh
+    ee => ē
+    eĩ => yã
+    ny => ñ
+    phh => ph
+    {lg, gn} => ṃ
+    mv => b
+    n => e / @c _ $
+    s => * / _ $
+    then: {ty, dy} => {ch, j}
+    gt => kh
+    dl => d
+    iẽ => yẽ

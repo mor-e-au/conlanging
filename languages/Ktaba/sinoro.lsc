@@ -1,0 +1,61 @@
+Class c {b, d, g, p, t, k, x, s, z, ẓ, ž, ź, š, ś, pʰ, tʰ, kʰ, ćʰ, cʰ, čʰ, qʰ, q, w, r, l, ł, h, ʼ, m, n, ṣ, c, č, ć, ŋ}
+Class v {a, e, o, ā, ē, ō, ə, ê, î, ô, â}
+
+v:
+    iwa => u
+    ay => â
+    oa => ô
+    wi => u / $ _
+    e => * / $ _
+    iyê => î
+    oo => ô
+    then: @v$1 => $1 $1 / _ @c @c? o $
+    then: (
+        {oo, aa, ee, ii, uu} => {a, o, i, ai, au}
+        o => * / _ $ // $ @c @c? _ $
+    )
+    then: {â, ô, î, ê} => {a, o, i, e} / _ $
+
+c:
+    {p, t, k} => {h, s, sh} / _ i
+    then: th => sh
+    ŋ => ng
+    m => ḇ / $ _
+    r @v r => nn
+    then: nn => ng / $ _
+    {t, d} => * / _ $
+    s => * / _ $
+
+consonant-softening:
+    {p, t, k, b, d, g, j} => {pp, tt, kk, p, t, k, ch}
+    then: {pp, tt, kk} => {p, t, k} / $ _
+    then: {pp, tt, kk} => {p, t, k} / _ $
+
+p:
+    {â, ê, î, ô, û} => {aa, ee, ii, oo, uu}
+    sht => ch
+    ḇ => b
+    nk => ng
+    then: {sh, ch} => {s, ts} / _ i
+    eeyo => au
+
+p-v:
+    {aa, ee, ii, oo, uu} => {e, i, i, u, u} / _ $
+    iya => ee
+    yi => tsi
+    nn => t / _ $
+    oyo => au
+    rr => sh
+    {pp, tt, kk} => {p, t, k} / _ @c
+    {pp, tt, kk} => {p, t, k} / @c _
+    then: au => ee
+    oya => ua
+    aao => au
+    r => n / _ {g, k, t, d, n, ch, sh, s}
+    aaa => au
+    aaee => ai
+    y => e / {$, @c} _ @c
+    {ae, ao} => {ai, au}
+    oooo => oo
+    eeee => ee
+    iw => ii / _ {@c, $}

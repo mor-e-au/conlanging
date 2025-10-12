@@ -1,0 +1,23 @@
+Class c {b, d, g, p, t, k, x, s, z, ẓ, ž, ź, š, ś, pʰ, tʰ, kʰ, ćʰ, cʰ, čʰ, qʰ, q, w, r, l, ł, h, ʼ, y}
+Class v {a, e, o, ā, ē, ō, ə, ë}
+
+v:
+    ë => ă
+    e => a
+    {ā, ē, ō, ī} => {a, e, u, i}
+    aă => a
+
+c:
+    {b, d, g} => * / _ $
+    {ś, š} => ş
+    x => y
+    tr => ç
+    nta => nd / _ $
+    then: {dy, sy} => {c, ş}
+    z => s / _ t'
+    vs => z
+    d => l / @v _ @v
+
+vowel-smoothing:
+    ay => e / _ {@c, $}
+    aă => a

@@ -1,0 +1,5 @@
+Class c {b, d, g, p, t, k, ḏ, ṯ, q, w, r, l, s, z, š, h, ẖ, ḫ, ḥ, n, m, \3, ĝ}
+Class v {a, i, u, ā, ī, ū, aw, ay}
+
+c:
+    ĝ => \: / @v _ {@c, $}

@@ -1,0 +1,18 @@
+Class c {b, d, g, p, t, k, c, j, ṣ, ẓ, ṭ, w, n, m, r, l, x, h, ʼ, š, č}
+Class v {a, e, i, o, u, ə, ā, ē, ī, ō, ū}
+
+v:
+    {aa, ee, ii, oo, uu} => ə / _ $
+    ə => * / @v @c _ @c {@v, $}
+    then: {i, e} => {e, a}
+
+c:
+    {c, k, t} => ʼ / _ $
+    then: c => č
+    ṣ => š
+    ẓ => j
+    then: @v$1 h => $1 $1 / _ {@c, $}
+
+ortho:
+    {aa, ee, ii, oo, uu} => {ā, ē, ī, ō, ū}
+    then: ēe => ē

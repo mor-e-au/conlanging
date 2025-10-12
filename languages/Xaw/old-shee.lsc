@@ -1,0 +1,12 @@
+Class c {b, d, g, p, t, k, s, r, l, h, x, n, m, w, q, c, j, y, ṣ, ʼ, z}
+Class v {á, é, í, ú, à, è, ì, ù, a, e, i, u}
+
+v:
+    {á, é, í, ú} => {aa, ee, ii, uu}
+    {à, è, ì, ù} => {a, e, i, u}
+
+c:
+    {w, y, h, x} => {*, z, *, ṣ}
+    then: {b, d, g, p, t, k, c, j} => {w, r, h, b, d, g, j, y}
+    q => k
+    then: aaa => aaw

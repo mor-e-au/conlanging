@@ -1,0 +1,15 @@
+Class c {b, d, g, p, t, k, s, h, r, n, m, y, w, j, ŋ, ñ, l, š, ʼ}
+Class v {a, e, i, u, ā, ē, ī, ū, ø, y}
+
+pre:
+    y => j
+
+v:
+    {ā, ē, ī, ū} => {áu, ie, éi, ou}
+    then: {au, eu, iu, ei, ai} => {aa, øø, yy, ee, ee}
+
+c:
+    {bb, dd, gg, pp, tt, kk, nn, mm, rr, ss, ww} => {ʼb, ʼd, ʼg, pʼ, tʼ, kʼ, ŋ, ñ, l, š, m}
+
+p:
+    {áu, éi} => {au, ei}

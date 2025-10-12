@@ -1,0 +1,21 @@
+# WRITTEN IN CYRILLIC #
+Class c {b, d, g, p, t, k, r, l, n, m, s, š, č, j, h, x, v, c}
+Class v {a, e, i, o, u, ä, ö, ü, õ}
+
+v:
+    i => \'ì / @c _ $
+    {ä, ö} => e
+    ü => i
+    õ => a
+    then: ee => \'e
+    {ai, ei} => ee
+
+c:
+    h => * / _ @c
+    then: p => h / _ @c
+    then: s => h / _ {@c, $} // _ s
+    then: (
+        {bb, dd, gg, pp, tt, kk, ss, rr, nn, mm, ll, v} => {b\', d\', g\', p\', t\', k\', s\', r\', n\', m\', l\', v\'}
+        šš => št
+    )
+    then: \'\' => \'

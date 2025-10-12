@@ -1,0 +1,59 @@
+Class c {b, d, g, p, t, k, s, z, š, ž, č, ǰ, ť, ď, r, l, ñ, y, m, n, w, q, ŋ, ʼ, j, c}
+Class v {a, e, i, o, u, ã, ẽ, ĩ, õ, ũ}
+
+v:
+    e => a / _ $
+
+c:
+    {gw, ǰ} => j
+    {my, ny} => {mm, nn}
+    r @v$1 => $1 r / @c _ {@c, $} // r _
+    y => d / $ _
+    rr => n
+    y => l / @v _ @v
+    ʼ => y / $ _
+    then: ʼ => h
+    r => k / _ $
+
+n-removal:
+    @v {n, m} => @v * / _ {@c, $}
+
+h-lengthening:
+    @c$1 h => $1 $1
+    @v$1 h => $1 $1 / _ {@v, $}
+    then: @v => * / @v @v _ {@c, $}
+
+insane-vowel-dropping:
+    {a, u, o} => * / $ @c? _ @c @v
+    then: {a, u, o} => * / @v @c _ @c $
+    then: {a, u, o} => * / @v @c _ @c @v {@c, $}
+
+    then: (
+        {e, i} => ʲ / $ @c? _ @c @v
+        then: {e, i} => ʲ / @v @c _ @c $
+        then: {e, i} => ʲ / @v @c _ @c @v {@c, $}
+    )
+
+assimilation:
+    j => č / {p, t, k, s, č} _
+    j => č / _ {p, t, k, s, č}
+    then: čs => čč
+    jz => jh
+    then: tč => čh
+    ʲ => * / $ _
+    then: jʲ => j
+    ʲ => i / {b, p, m, n} _ @c
+    tʲ => č
+    lʲ => j
+    zʲ => ž
+    sʲ => š
+    then: čj => čh
+    then: {r, n} => {ar, an} / {$, @c} _ {@c, $}
+    dʲ => z
+    tt => th
+    then: dj => dh
+    čʲ => c
+    rʲ => c
+
+l-dampening:
+    @c$1 l => $1 w

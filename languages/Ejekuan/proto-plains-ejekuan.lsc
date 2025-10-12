@@ -1,0 +1,28 @@
+Class c {b, d, g, p, t, k, ṣ, ẓ, c, r, ł, ñ, n, m, ʼ, w, s, z, c, j, y, θ, h, pʼ, kʼ, tʼ}
+Class v {a, e, u, ā, ē, ū}
+
+v:
+    {e} => * / $ _ @c @v @c @c? @v @c? $
+    {ā, ē, ū} => {ē, ī, ō}
+
+pre-c:
+    pk => q
+
+c:
+    r => l
+    then: {b, d, g} => {w, r, h}
+    {tʼ, t} => {t, d}
+    {pʼ, p} => {p, b}
+    {kʼ, k} => {k, g}
+    ł => θ
+    c => č
+    {ṣ, ẓ} => {š, ž}
+    ñ => y
+    then: q => kw
+
+aspiration:
+    {š, ž} => h / _ {b, d, g, p, t, k}
+    then: {b, d, g} => {p, t, k} / h _
+
+length:
+    {gk, kg, bp, pb, dt, td} => {kk, kk, pp, pp, tt, tt}

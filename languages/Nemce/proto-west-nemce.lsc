@@ -1,0 +1,14 @@
+Feature +stress
+Diacritic ˈ (floating) [+stress]
+Class c {b, d, g, p, t, k, c, s, š, z, ž, r, l, ř, ľ, n, ň, m, x, v}
+Class v {a, e, i, ę, ǫ, ĭ, ŭ, o}
+
+assign-stress:
+    @v => [+stress] / _ @c+ @v @c? $
+
+v:
+    {ĭ, ŭ}&[-stress] => {ʼ, *} // _ $
+    then: {ĭ, ŭ} => {i, *} / _ $
+
+romanizer:
+    {aˈ, eˈ, iˈ, oˈ, uˈ, ęˈ, ǫˈ, ĭˈ, ŭˈ} => {a, e, i, o, u, ę, ǫ, ĭ, ŭ}

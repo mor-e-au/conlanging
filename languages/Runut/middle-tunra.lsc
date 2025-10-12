@@ -1,0 +1,11 @@
+Class c {p, t, k, r, w, ʀ, s, x, n, m, ʼ, y, ŋ, b, d, g, č, ñ, j, c, z}
+Class v {a, e, i, u, ə, o, õ, ã, ẽ, ũ, ə, æ}
+
+v:
+    {a, e, i, o, u} => {o, a, e, e, i}
+    {ą, ę, į, ǫ, ų} => {ə, æ, e, a, u}
+
+c:
+    nl => nd
+    {cñ, ñc} => dz
+    c => ts

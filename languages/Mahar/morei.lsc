@@ -1,0 +1,37 @@
+Class c {p, t, c, b, d, g, ś, s, r, l, n, m, b}
+Class v {a, e, i, u}
+
+m-reduction:
+    m => * / _ $
+
+v:
+    u => o
+    au => ō
+    i => e / _ $
+    then: a => i / _ $
+    then: {a, e, i, o, ai, ei} => {ō, ē, ei, ao, ē, ē} / _ @c i $
+    {i, e} => {e, a} / $ _
+    io => e
+    {ai, ae} => ē
+
+c:
+    rr => th
+    then: i => z / $ _ @v
+    ś => s
+    c => t / _ {i, e, ē}
+    then: c => k
+
+p:
+    aao => ō
+    sr => thr
+    ii => ē
+    eo => o
+    ao => au
+    rl => ll
+    then: au => ō
+    then: ea => za / $ _
+    ie => ē
+    oe => oi
+    f => ph
+    ee => ē
+    oa => ō

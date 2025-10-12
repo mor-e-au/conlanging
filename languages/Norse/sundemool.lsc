@@ -1,0 +1,11 @@
+Class c {b, d, g, p, t, k, th, dh, n, m, r, l, s, z, j, h, f, w, qu}
+Class v {a, e, i, o, u, y, á, é, í, ó, ú, ý, ô, æ, ø, ā, ē, ī, ō, ū}
+
+v:
+    {â, ê, î, ô, û} => {aa, ee, ie, oo, uu}
+    then: ooe => ohe
+    then: eee => ehe
+
+c:
+    eg => ei / _ @c
+    gl => gel / _ $

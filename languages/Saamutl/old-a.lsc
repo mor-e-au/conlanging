@@ -1,0 +1,16 @@
+Class c {p, t, k, b, d, g, w, ŋ, r, l, s, n, m, x, ʼ, ŵ}
+Class v {a, e, i, u, ə, á, é, í, ú, ō, ā, ē, ī, ä}
+
+v:
+    {a, u, ə} => * / @c _ $ // $ @c? _ $
+    then: ə => i
+    {aa, ee, ii, uu} => {ō, ā, ē, ī}
+    then: {a, e, i, u} => {ä, a, e, i} // _ $
+
+c:
+    {tł, ł} => {tl, l}
+    w => ŵ
+    ŋ => k
+
+p:
+    {á, é, í, ú} => {aa, ee, ii, uu}

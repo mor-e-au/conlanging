@@ -1,0 +1,55 @@
+Class c {b, d, g, p, t, k, š, č, ž, dž, s, l, r, m, n, z, j, v, c, ň, w, ć, ś, ź, ń}
+Class v {a, e, i, o, u, ĕ, ŭ, ь, ъ, y, ę}
+Class l {r, l}
+
+v:
+    {ą, į, ǫ, ų} => {o, ę, a, y}
+    ь => * / @c _ @c @v // $ @c _
+
+c:
+    {c, n, s, t, d, č, ň, ž} ь => {ć, ń, ś, ć, ź, ć, ń, ź} * / _ $
+    {š, č, ž} => {sz, cz, ż}
+    then: rń => rz
+    {el, al, ul, ol, il} => {le, ła, ło, ło, le} / _ {@c, $}
+    {er, ar, ur, or, ir} => {rze, ra, ro, ro, rze} / _ {@c, $}
+    {ьl, ъl, ьr, ъr} => {ly, ły, rzy, ry} / _ {@c, $}
+    v => w
+    then: szr => rz
+    ď => dz
+
+p:
+    ъ => * / @v @c _ $
+    ъ => e / @c _ @c
+    ъ => o / @c @c _ $
+    ъ => wy / $ _
+    wyw => wi / _ @v
+    ь => je / $ _
+    rź => rz
+    then: {ele, ere} => {le, re}
+    then: zь => ź / _ $
+    rь => rz / _ $
+    then: lej => ie
+    then: zь => z / $ _ @c @v
+    then: ь => ie / $ @c _ @c? $
+    then: ь => *
+    then: rie => rze / $ _
+    then: ular => ółra
+
+after:
+    cś => trz
+    jrz => zrz
+    {żrz, nrz} => drz
+    cżr => trz
+    wzż => wrz
+    {er, ul, ur, al, el} => {y, ło, y, la, y} / _ $
+    czr => czrz
+    sń => ść
+    {b, m} => w / $ _ @c
+    wyw => wi / _ @v
+    eja => ia
+    ojl => ał
+    aja => ia
+    ń => y / @c _ $
+    stj => sć
+    kъżr => krz
+    elo => eł

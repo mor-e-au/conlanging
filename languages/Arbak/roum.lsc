@@ -1,0 +1,26 @@
+Class c {b, d, g, p, t, k, s, h, r, n, m, y, w, j, ŋ, ñ, l, š, ʼ, f, q}
+Class v {a, e, i, u, ā, ē, ī, ū, ø, y, ü, ö, è, ə}
+
+v:
+    ə => *
+    {é, ì, æ, a} => {i, e, a, o}
+    then: {ow, uw} => ou
+    then: öa => wa
+    oo => aw
+    {oe, ua} => wa
+
+c:
+    {b, d, g} => {p, t, k} / _ $
+    r => n / $ _
+    ǰ => ġ
+    {tj, c} => ċ
+    sj => x
+    r => l / _ $
+    then: j @c$1 => $1 $1
+    ŋ => gh
+    ñ => j
+    {ph, th, kh} => {f, s, q}
+
+p:
+    sċ => x
+    bp => bb

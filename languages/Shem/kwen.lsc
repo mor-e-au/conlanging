@@ -1,0 +1,49 @@
+Class c {m, k, w, n, s, t, r, š, j, ts, y, ʼ, d, č, h, ṯ}
+Class v {a, e, i, o, u, ə, ā, ē, ī, ō, ū, ø, á, é, í, ó}
+Class e {š, h, s, w}
+Class a {a, á, e, é, i, í, o, ó}
+
+v:
+    @v => * / @v @c _ @c @v
+    then: (
+        {a, e, i, o, u} => {á, é, í, ó, ú} / $ @c? _ // @e _
+        {a, e, i, o, u} => {á, é, í, ó, ú} / $ @c? _ // _ @e
+    )
+    then: {u, ú} => {a, á}
+    @v$1 n => $1 ḥn // _ @v
+    then: (
+        {aw, iw, ew, uw, ow, áw, íw, éw, úw, ów} => {en, en, en, on, on, én, én, én, ón, ón}
+    )
+
+c:
+    w => n / $ _
+    h => ʼ
+    then: s => h
+    {b, d, j} => {w, s, k}
+    then: {th, ṯ} => {s, ts}
+    š => kw
+    then: @c$1 $1 => h $1
+    then: nw => rw
+
+lengthening:
+    @a$1 y => $1 \: / _ {$, @c}
+    íya => e\:
+    oa => o\:
+
+p:
+    hʼ => wʼ
+    y => e / @c _ @c
+    áye => áya
+    ḥ => h
+    m => hn / {e, é, o, ó} _ $
+    then: m => n / _ $
+    then: hn => n / {a, á, i, í} _
+
+m-reduction-and-vowel-lengthening:
+    m => w / $ _
+    m => w / @v _ @v
+    {a, i, á, í} n => {a, i, á, í} \: / _ $
+
+p2:
+    {awon, áwon} => {on\:, ón\:}
+    tsr => tn

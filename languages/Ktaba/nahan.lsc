@@ -1,0 +1,26 @@
+Class c {b, d, g, p, t, k, x, s, z, ẓ, ž, ź, š, ś, pʰ, tʰ, kʰ, ćʰ, cʰ, čʰ, qʰ, q, w, r, l, ł, ʼ, v}
+Class v {a, e, o, ā, ē, ō, i, u}
+
+v:
+    @v$1 => $1 $1 / _ @c? @c {e, i}
+    @v$1 => $1 $1 / _ {p, t, k} $
+
+c:
+    ng => ŋ
+    ẓ => d
+    {k, g} => {c, dz} / _ i
+    s => * / _ $
+    {p, t, k} => * / _ $
+    then: {b, d, g} => {p, t, k} / _ $
+    {p, t, k, s} => {b, d, g, z} / _ {b, d, g, z, v}
+    dv => dz
+    n => j / _ $
+    y => j
+
+p:
+    ŋ => ň
+    {p, t, k, s} => {b, d, g, z} / {b, d, g, z} _
+    {sš, šs} => š
+
+vowel-diacritics:
+    {aa, ee, ii, oo, uu} => {á, é, í, ó, ú}

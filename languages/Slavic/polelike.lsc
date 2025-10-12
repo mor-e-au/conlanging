@@ -1,0 +1,17 @@
+Class c {b, d, g, p, t, k, s, z, š, ž, c, č, ť, ď, l, r, n, m, x, h, v, ľ, ř, ň, j}
+Class v {a, e, i, o, u, ь, ъ, ě, ę, ǫ, y}
+
+
+v:
+    ę => ie
+    ǫ => o
+    a => ja / $ _
+    à => a
+    ě => i
+
+metathesis:
+    ȏl => lo
+
+c:
+    ň => nj
+    žšč => šč

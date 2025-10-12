@@ -1,0 +1,11 @@
+# WRITTEN IN CYRILLIC #
+Class c {b, d, g, p, t, k, r, l, n, m, s, š, č, j, h, x, v, c, \', ł}
+Class v {a, e, i, o, u, ä, ö, ü, õ, ì, y}
+
+v:
+    {ee, au} => {i, o}
+    ii => y
+
+c:
+    \'ì => \'
+    l => ł // _ {\', e, i}

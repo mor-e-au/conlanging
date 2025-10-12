@@ -1,0 +1,12 @@
+Class c {b, d, g, p, t, k, s, z, š, ž, č, ǰ, ť, ď, r, l, ñ, y, m, n, w, q, ŋ, ʼ, j}
+Class v {a, e, i, o, u, è}
+
+v:
+    e => è / _ $
+    then: @v$1 => $1 $1 / _ @c @c? è
+
+c:
+    ǰ => j
+    gw => g
+    rr => l
+    {ny, my} => ñ

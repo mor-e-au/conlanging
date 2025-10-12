@@ -1,0 +1,11 @@
+Class c {b, d, g, p, t, k, s, z, š, ž, č, ǰ, ť, ď, r, l, ñ, y, m, n, w, q, ŋ}
+Class v {a, e, i, o, u}
+
+v:
+    {a, e, i, o, u} => {ea, ie, ii, oa, oo} / $ @c? _ @c @v
+
+c:
+    {n, m} => * / _ $
+    {ť, ď} => {č, ǰ}
+    w => v
+    q => x

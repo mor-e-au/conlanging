@@ -1,0 +1,20 @@
+Class c {b, d, g, p, t, k, š, č, ž, dž, s, l, r, m, n, z, j, v}
+Class v {a, e, i, o, u, ĕ, ŭ, ь, ъ}
+Class l {r, l}
+
+endings:
+    {as, az, es, ez, is, iz, us, uz, os, oz} => {ъ, ъ, ь, ь, ь, ь, ь, ь, ь, ь} / @c _ $ // $ @c _ $
+    e => ь / @c _ $ // $ @c _ $
+
+v:
+    nj => ň
+    {an, en, in, on, un, ĕn, ŭn} => {ą, ę, į, ǫ, ų, ę, ą} / _ {$, @c}
+    then: {ĕ, ŭ} => {ь, ъ}
+    then: {u, i, ĕ} => {ъ, ь, ь} / @c _ $ // $ @c _ $
+
+c:
+    {dž, ž} => {ď, z}
+    zd => z
+    {v, w} => {m, v}
+    {k, g, sk, zg} => {c, dz, šč, ždž} / _ {j, i, e, ę, į, ь}
+    {sj, zj} => {š, ž}

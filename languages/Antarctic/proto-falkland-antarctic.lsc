@@ -1,0 +1,13 @@
+Class c {b, d, g, p, t, k, s, z, š, ž, č, ǰ, ť, ď, r, l, ñ, y, m, n, w, q, ŋ}
+Class v {a, e, i, o, u}
+
+v:
+    {a, e, i, o, u} => {a, a, i, a, o}
+
+c:
+    {ñ, ŋ} => {n, g}
+    {š, ž, č, ǰ, ť, ď} => {š, ž, th, dh, s, z}
+    r => l / _ {@c, $}
+    q => g
+    w => b
+    then: lr => r

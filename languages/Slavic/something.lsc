@@ -1,0 +1,41 @@
+Class c {b, d, g, p, t, k, s, z, š, ž, c, č, ť, ď, l, r, n, m, x, h, v, ľ, ř, ň, j}
+Class v {a, e, i, o, u, ь, ъ, ě, ę, ǫ, y}
+
+v:
+    y => è
+    {ě, ę, ǫ} => {y, ẽ, ū}
+    {ь, ъ} => {', *} / _ $ // $ @c _ $
+
+c:
+    {g, x} => h
+    ř => z
+    then: l => * / _ y
+    ň => j
+    ľ => ni / _ @v
+    then: ľ => j / _ $
+
+vowel-breaking-and-smoothing:
+    {e, i, o} => {ea, ie, aa} / $ @c? @c? _ @c
+    then: {ea, ie, aa} => {y, ie, ẽ}
+    {ь, ъ} => {i, o}
+
+palatal-smoothing:
+    {t, d, š, ž, s, z, n} ' => {c, dz, s, z, ś, ź, j} *
+    then: j => i / @v _ $
+
+w-palatalization:
+    {č, ž, š, dž} => {c, z, s, dz}
+    then: {tv, dv, zv, sv} => {č, dž, ž, š}
+
+p:
+    ť => č
+    ď => dž
+    ' => i / _ $
+    ji => y
+
+length-smoothing:
+    {y, ẽ, ū} => {i, e, u} / {y, ẽ, ū} @c @c? _
+
+p2:
+    ẽ => ē
+    è => e

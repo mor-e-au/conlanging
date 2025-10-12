@@ -1,0 +1,23 @@
+Class c {p, t, c, b, d, g, q, m, n, l, r, s, f, h, x}
+Class v {a, e, i, o, u, ā, ē, ī, ō, ū}
+
+v:
+    o => * / _ $ // $ @c @c? _ $
+    then: o => u / _ $
+    then: @c r * => @c r u / _ $
+    e => * / _ $ // $ @c @c? _ $
+
+c:
+    l => i / @v _ @c
+    {qua, qui, quo, que, quu} => {co, cai, cu, ca, cu}
+    then: qu => c / _ $
+    ss => ș
+    v => u / _ $
+    li => i / @v _ @v
+    h => *
+    tt => ț
+    f => h / $ _ {a, u, o}
+    {b, d, g} => {p, t, c} / _ $ // @c _ $
+
+p:
+    or => ur / _ $

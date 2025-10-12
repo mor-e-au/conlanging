@@ -1,0 +1,26 @@
+Class c {b, d, g, p, t, k, s, z, š, ž, č, ǰ, ť, ď, r, l, ñ, y, m, n, w, q, ŋ, h}
+Class v {a, e, i, o, u}
+
+pre:
+    m => w / _ {@c, $}
+
+v:
+    {aa, ee, ii, oo, uu} => {ä, ë, i, á, u}
+
+c:
+    {th, dh} => {x, y}
+    n => r / _ $
+    ss => š
+
+v-clearing:
+    äa => ää
+
+monophthongization:
+    {aw, iw, ow, uw} => {ó, ü, u, o}
+    {äw, ëw, áw} => {ã, ü, ó}
+
+r-smoothing:
+    r => h / _ @v r
+
+p:
+    iyi => i

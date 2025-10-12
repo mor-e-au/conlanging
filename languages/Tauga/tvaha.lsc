@@ -1,0 +1,21 @@
+# WRITTEN IN CYRILLIC #
+Class c {b, d, g, p, t, k, r, l, n, m, s, š, č, j, h, x, v, c, y}
+Class v {a, e, i, o, u, ä, ö, ü, õ}
+
+v:
+    au => va
+    ì => e
+    {aa, ee, ii, oo, uu} => {a, e, i, o, u}
+
+c:
+    j => y
+    g => h / @v _ @v
+    then: h => * / _ {@c, $}
+    \' => *
+    g => * / _ $
+
+vowel-breaking:
+    e => ya / $ @c? _ @c @c? {a, o, u}
+
+p:
+    u => * / _ $

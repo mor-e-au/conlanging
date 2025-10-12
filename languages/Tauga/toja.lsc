@@ -1,0 +1,34 @@
+# WRITTEN IN CYRILLIC OR POLISH LATIN #
+Class c {b, d, g, p, t, k, r, l, n, m, s, š, č, j, h, x, v, c, \', ł}
+Class v {a, e, i, o, u, ä, ö, ü, õ, ì, y}
+
+v:
+    aa => o
+    \'e => ie // $ _
+    then: \'e => je
+    u => * / @c _ $
+    ije => îe
+
+c:
+    št\' => ść
+    {š, č} => {sz, cz}
+    v => w
+    h => ch / _ {@c, $}
+    x => ch
+    l\' => l
+    r => rz / {y, e, i} _ $
+    k => c / _ i
+    {r\', t\', s\', n\', k\', g\'} => {ź, ć, ś, ń, ć, dź} / _ $
+    \'a => ia
+    then: \' => *
+    n => * / _ $
+    g => y / @c _ $
+    g => j / @v _ $
+    lie => le
+
+p:
+    {e, i} => {a, y} / _ ł
+    uu => ó // _ $
+    uu => y / _ $
+    oo => wa
+    ja => ia / @c _

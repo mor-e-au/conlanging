@@ -1,0 +1,11 @@
+Class c {b, d, g, p, t, k, ñ, r, l, s, z, n, m, c, q, v, y}
+Class v {a, e, i, o, u, á, é, í, ó, ú}
+
+v:
+    o => u
+
+c:
+    h => *
+    j => ʼ
+    @c$1 @c$2 => * $2 / _ @v
+    {v, b} => m / $ _ @v

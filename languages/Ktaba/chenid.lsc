@@ -1,0 +1,41 @@
+Class c {b, d, g, p, t, k, x, s, z, ẓ, ž, ź, š, ś, pʰ, tʰ, kʰ, ćʰ, cʰ, čʰ, qʰ, q, w, r, l, ł, h, ʼ, m, n, ṣ, c, č, ć, ʼ}
+Class v {a, e, o, ā, ē, ō, ə}
+
+v:
+    {a, e, o, aa, ee, oo, i, ii} => {ą, ę, ǫ, ąą, ęę, ǫǫ, į, įį} / _ {n, m, r} {@c, $}
+
+c:
+    {n, m, r} => * / _ {@c, $}
+    {b, d, g, w} => {w, z, ʼ, gh}
+    {p, t, k} => {b, d, g}
+    f => p
+    then: ʼ => * / $ _
+    {j, č} => {zh, j}
+    h => ch / $ _ {i, e, į, ę}
+    š => sh
+    ć => ch
+    then: z => l / _ $
+    h => i / @v _ @c
+
+p:
+    aaa => ąą
+    h => y / {i, e} _ {a, o}
+    shsh => ch
+    igh => įį / _ {@c, $}
+    y => i / @v _
+    aw => o
+    gh => n / _ {@c, $}
+    then: (
+        {a, aa, e, ee, o, oo, i, ii} => {ą, ąą, ę, ęę, ǫ, ǫǫ, į, įį} / _ n {@c, $}
+        n => * / _ {@c, $}
+    )
+    then: ąąa => ęę
+    o => w / @v _ @v
+    jʼ => j
+    eąą => įį
+    s => i / @c _ $
+    then: gh => y / _ {i, e, į, ę}
+    ia => iya
+    then: ʼ => * / @c _
+    ea => ee
+    oaa => oo

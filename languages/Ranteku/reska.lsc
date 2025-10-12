@@ -1,0 +1,65 @@
+Class c {b, d, g, p, t, k, š, č, ž, dž, s, l, r, m, n, z, j, v, ř, h, c, ň}
+Class v {a, e, i, o, u, ĕ, ŭ, ь, ъ, í, ý, ě}
+Class l {r, l}
+
+pre:
+    @v$1 l @v$2 => $1 l *
+    ll => lj
+
+v:
+    {ą, ę, ǫ, ų} => {a, ě, u, á}
+    ъ => y / _ $
+    e => ě / $ _
+    a => * / @c _ $ // $ @c _ $
+
+c:
+    g => h
+    {el, ol, er, or} => {le, la, ře, ra} / _ {@c, $}
+    {ul, al, il, ur, ar, ir} => {la, la, lí, ra, ra, ří} / _ {@c, $}
+    ď => z
+    tj => c
+    ts => c
+
+yod-meta:
+   {ьl, ьr} => {li, ři} / _ {@c, $}
+   {ъl, ъr} => {le, re} / _ {@c, $}
+
+yod:
+    ь => * / @v @c _ @c @v
+    ь => * / @c _ $ // $ @c _ $
+    ь => * / $ @c _ @c @v
+    čr => ř
+    ъ => * / @v @c _ @c @v
+    ъ => * / $ @c _ @c @v
+    then: ь => i / $ _
+    then: ь => e
+    then: ъ => e
+    then: ie => í
+    en => ě / _ {r, l}
+    an => á / _ {r, l}
+
+p:
+    zk => sk
+    {b, d, g} => {p, t, k} / _ $
+    {b, d, g} => {p, t, k} / _ {s}
+    ňe => ně
+    ez => ý / _ $
+    az => á / _ $
+    ml => mn
+    cl => č
+
+p2:
+    * => e / $ @c? @c _ $
+    then: ňe => ně
+    zh => ř
+    ijy => ý
+    dek => tk / @v _ {@v, r}
+    rz => ř / _ $
+    sl => š
+    ejr => ej / _ $
+    {zř, zr} => {stř, str}
+    {tl, dl} => {č, ž}
+    lje => lě
+    lr => lj
+    then: lje => lě
+    jě => ně

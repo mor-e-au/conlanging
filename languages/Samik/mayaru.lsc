@@ -1,0 +1,17 @@
+Class c {m, n, ń, ŋ, p, b, t, d, ḍ, c, j, k, ǵ, g, q, s, ś, h, y, r, l, ĺ}
+Class v {a, ä, i, ö, u, ü, o, ē, ī, â, û, î, e, ì, ù, è, à, ò}
+
+v:
+    {iâ, iû} => {a, u} / $ _
+    then: {â, ê, î, ô, û} => {e, i, ì, u, ù}
+
+c:
+    š => sh
+    w => *
+
+palatalization:
+    {di, ti, si, gi, ki, zi} => {j, ch, sh, y, s, j} / _ @v
+    then: {iâ, iû} => {a, u}
+
+p:
+    {ayi, eyi, oyi, uyi, iyi} => {è, ì, è, ì, ì}
