@@ -1,0 +1,9 @@
+C = b:10 d:10 g:10 p:10 t:10 k:10 r:10 l:10 n:10 m:10 s:10 z:10 h:10 v:10 ch:10 y:10 dh:10 sh:10
+V = a:10 e:10 i:10 u:10 aa:3 ee:3 ii:3 uu:3
+N = n:3
+
+random-rate: 50
+
+words: C?VCV C?V C?VCVCV C?VCVN? C?VN? C?VCVCVN?
+
+filter: yi > ii; iii > ye

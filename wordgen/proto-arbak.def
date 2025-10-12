@@ -1,0 +1,9 @@
+I = p:1 t:1 k:1 b:1 d:1 g:1 m:1 n:1 r:1 s:1 h:1 y:1 w:1
+M = p:10 t:10 k:10 b:10 d:10 g:10 m:10 n:10 r:10 s:10 h:10 y:10 w:10 pp:2 tt:2 kk:2 bb:2 dd:2 gg:2 mm:2 nn:2 rr:2 ss:2 yy:2 ww:2
+F = t:1 k:1 m:1 n:1 s:1 r:1
+R = n:1 r:1 m:1 s:1
+V = a:10 e:10 i:10 u:10 ā:5 ē:5 ī:5 ū:5 au:2 eu:2 iu:2 ai:2 ei:2
+
+random-rate: 50
+
+words: I?VMVF? I?VR?MVF? I?VMR?VF? I?VMVMVF? I?VR?MVMVF? I?VMR?VMVF? I?VMVR?MVF? I?VMVMR?VF? I?VF? I?VMVMVMVF?

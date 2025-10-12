@@ -1,0 +1,8 @@
+I = b:10 d:10 g:10 p:10 t:10 k:10 v:10 s:10 r:10 l:10 z:10 h:10 j:10 n:10 m:10
+M = rr:10 rb:10 rd:10 rg:10 rp:10 rt:10 rk:10 rv:10 rs:10 ll:10 rz:10 rj:10 rn:10 rm:10 b:10 d:10 g:10 p:10 t:10 k:10 v:10 s:10 r:10 l:10 z:10 h:10 j:10 n:10 m:10 mb:10 nd:10 ng:10 mp:10 nt:10 nk:10 mm:10 nn:10 ns:10 nj:10 st:10 sp:10 sn:10 sm:10 sk:10
+F = t:10 v:10 r:10 l:10 s:10 z:10 d:10
+V = a:10 e:10 i:10 o:10 u:10 â:7 é:7 à:7 î:7 ô:7 ai:4 ié:4
+
+random-rate: 50
+
+words: I?VMVF? I?VMVMVF? VF? VMVF?

@@ -1,0 +1,7 @@
+C = p:1 t:1 k:1 b:1 d:1 g:1 w:1 tł:1 ʼ:1 ŋ:1 l:1 r:1 n:1 m:1 s:1 x:1 ł:1
+V = a:10 i:10 u:10 e:10 ə:10 aa:3 ii:3 uu:3
+F = s:1 tł:1 k:1 ʼ:1 n:1 m:1 t:1 l:1 ŋ:1 x:1 ł:1
+
+random-rate: 25
+
+words: C?VCVF? C?VCVCVF? C?VCVCVCVF? C?VF?

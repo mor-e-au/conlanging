@@ -1,0 +1,8 @@
+I = k:1 p:1 s:1 m:1 n:1 t:1 ŋ:1 ń:1 ǵ:1 ś:1 h:1 q:1 d:1 ḍ:1 b:1 g:1 r:1 c:1 j:1 l:1 ĺ:1 w:1 y:1 ts:1 z:1
+M = k:1 p:1 s:1 m:1 n:1 t:1 ŋ:1 ń:1 ǵ:1 ś:1 h:1 q:1 d:1 ḍ:1 b:1 g:1 r:1 c:1 j:1 l:1 ĺ:1 w:1 y:1 ts:1 rk:1 rp:1 rs:1 rm:1 rt:1 rŋ:1 rǵ:1 rś:1 rq:1 rd:1 rb:1 rg:1 rr:1 rc:1 rj:1 rw:1 ry:1 rts:1 rz:1 lk:1 lp:1 ls:1 lm:1 lt:1 lŋ:1 lǵ:1 lś:1 lq:1 ld:1 lb:1 lg:1 ll:1 lc:1 lj:1 lw:1 lts:1 lz:1
+F = k:1 y:1 r:1 n:1 z:1 d:1 g:1 t:1 l:1
+V = i:1 a:1 ä:1 u:1 e:1 ü:1 ö:1
+
+random-rate: 50
+
+words: I?VMVF? I?VMVMVF?

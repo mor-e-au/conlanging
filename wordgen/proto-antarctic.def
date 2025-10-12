@@ -1,0 +1,7 @@
+C = m:1 n:1 ñ:1 ŋ:1 p:1 b:1 t:1 d:1 ť:1 ď:1 č:1 ǰ:1 k:1 w:1 s:1 z:1 š:1 ž:1 r:1 y:1 q:1
+V = i:1 u:1 e:1 o:1
+R = m:1 n:1 ŋ:1 r:1
+
+random-rate: 50
+
+words: C?VR?CVR? C?VR? C?VR?CVR?CVR?

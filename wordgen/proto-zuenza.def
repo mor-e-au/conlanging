@@ -1,0 +1,7 @@
+C = m:1 k:1 p:1 v:1 n:1 s:1 t:1 b:1 l:1 g:1 d:1 ś:1 r:1 kh:1 ph:1 th:1 ŕ:1 z:1
+R = m:1 k:1 p:1 v:1 n:1 s:1 t:1 b:1 l:1 g:1 d:1 ś:1 r:1 kh:1 ph:1 mb:1 nd:1 th:1 nz:1 nt:1 mp:1 ns:1 ŕ:1 ng:1 nr:1 z:1 nl:1 rm:1 rk:1 rp:1 rv:1 rn:1 rs:1 rt:1 rb:1 rl:1 rg:1 rd:1 rr:1 rz:1 ŕk:1 ŕp:1 ŕs:1 ŕt:1 ŕz:1 nm:1 nk:1 nv:1 nn:1 sp:1 sr:1 sn:1 st:1 sk:1 sv:1 śp:1 śr:1 śn:1 śt:1 śk:1 śv:1 rkh:1 rph:1 rth:1 ŕkh:1 ŕph:1 ŕth:1
+V = i:1 a:1 u:1 e:1 ë:1 ai:1 au:1 ua:1 ei:1 eu:1 ue:1
+
+random-rate: 50
+
+words: C?VRVC? C?VRVRVC?

@@ -1,0 +1,9 @@
+C = b:10 g:10 d:10 p:10 k:10 t:10 s:10 z:10 n:10 m:10 r:10 w:10 h:10 by:3 gy:3 py:3 ky:3 ny:3 my:3 ry:3 hy:3 y:10
+N = n:10
+V = a:10 e:10 i:10 o:10 u:10 ii:3 ou:3 uu:3
+
+random-rate: 25
+
+words: C?VN?CVV? C?VN?CVV?CV C?VV?CVN? C?VV?CVN?CVV? C?VCVV?CVN?
+
+filter: wu > u; yi > i; hu > fu; wi > i; ti > chi; si > shi; di > ji; zi > ji; ye > e; wo > o; tu > tsu; we > e; aa > au; ee > ei; du > zu

@@ -1,0 +1,8 @@
+C = m:1 n:1 p:1 t:1 ṯ:1 k:1 q:1 b:1 d:1 ḏ:1 g:1 f:1 s:1 š:1 ẖ:1 ḫ:1 ḥ:1 h:1 z:1 ĝ:1 w:1 l:1 r:1 y:1 3:1
+V = i:1 ī:1 u:1 ū:1 a:1 ā:1
+G = w:1 y:1
+F = aw:1 uw:1 iw:1
+
+random-rate: 50
+
+words: C?VC?CVCF? C?VC?CVC? C?VC? C?VC?CVCVC? C?VC?CVCVCF?

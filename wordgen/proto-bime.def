@@ -1,0 +1,7 @@
+I = m:1 k:1 y:1 p:1 w:1 n:1 s:1 t:1 b:1 l:1 g:1 d:1 f:1 ʼ:1 z:1 r:1 ts:1 x:1 dz:1 ṭ:1
+C = m:1 k:1 y:1 p:1 w:1 n:1 s:1 t:1 b:1 l:1 g:1 d:1 f:1 ʼ:1 z:1 r:1 ts:1 x:1 dz:1 ṭ:1 ʼp:1 ʼt:1 ʼk:1 ʼb:1 ʼd:1 ʼg:1 ʼr:1 ʼl:1 ʼy:1 ʼs:1 ʼz:1 ʼn:1 ʼm:1 ʼx:1 ʼf:1 ʼṭ:1 ʼw:1 ʼts:1 ʼdz:1 hp:1 ht:1 hk:1 hb:1 hd:1 hg:1 hr:1 hl:1 hy:1 hs:1 hz:1 hn:1 hm:1 hf:1 hṭ:1 hw:1 hts:1 hdz:1
+V = a:1 e:1 i:1 o:1
+
+random-rate: 50
+
+words: I?VCVC? I?VCVCVC? I?VC? I?VCVCVCVC?
