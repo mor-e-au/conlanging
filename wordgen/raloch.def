@@ -1,0 +1,7 @@
+C = m:1 n:1 p:1 φ:1 t:1 θ:1 c:1 χ:1 z:1 s:1 ś:1 l:1 i:1 v:1 r:1 cs:1
+V = i:10 u:10 e:10 a:10 iu:3 eu:3 au:3 ō:3
+R = r:1 ś:1 s:1 n:1 m:1
+
+random-rate: 50
+
+words: C?VCR?VC? C?VCVCR?VC? C?VR?CVC? C?VCVR?CVC? C?VR?CR?VC? C?VCVR?CR?VC?
