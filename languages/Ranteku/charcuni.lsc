@@ -1,0 +1,24 @@
+Class c {b, d, g, p, t, k, š, č, ž, dž, s, l, r, m, n, z, j, v, w, ch, ñ}
+Class v {a, e, i, o, u, ĕ, ŭ, ь, ъ}
+Class l {r, l}
+
+v:
+    {ĕ, ŭ} => {a, o}
+    u => i / _ $
+
+c:
+    {č} => ch
+    š => s
+    {rz, lz, rs, ls} => {rr, ll, rr, ll}
+    {w, v} => b
+    nj => ñ
+    {p, t, k, b, d, g} => {b, d, g, m, z, h} / @v _ @v
+    ž => tz
+
+lengthening:
+    {a, e, i, o, u} n => {á, é, í, ó, ú} * / _ {s, z}
+
+p:
+    dtz => tz
+    sb => sp
+    rl => ll
