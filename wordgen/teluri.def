@@ -1,0 +1,9 @@
+C = b:1 d:1 g:1 m:1 n:1 r:1 l:1 p:1 t:1 k:1 s:1 š:1 h:1
+V = i:10 e:10 u:10 a:10 ī:2 ē:2 ū:2 ā:2
+F = b:1 d:1 g:1 m:1 n:1 r:1 l:1 s:1 š:1
+
+random-rate: 30
+
+words: C?VF? C?VC?CVF? C?VC?CVC?CVF?
+
+filter: pb > bb; bp > pp; lr > ll; pd > bd; kg > gg; gk > kk; šs > ss; sš > šš; kd > kt; gt > gd
