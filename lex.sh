@@ -1,13 +1,13 @@
 #!/bin/bash
 
-PRE=/mnt/extssd/eve/conlanging/languages
+PRE=~/conlanging/languages
 
 echo "Please enter language family:"
 read LEX
 
 loop() {
     local lang
-    cd /mnt/extssd/eve/conlanging/sca/bin || { echo "Failed to enter directory"; exit 1; }
+    cd ~/conlanging/sca/bin || { echo "Failed to enter directory"; exit 1; }
     chmod +x lexurgy
 
     micro words.wli
