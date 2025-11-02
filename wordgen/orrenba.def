@@ -1,0 +1,8 @@
+C = p:1 t:1 k:1 b:1 d:1 g:1 m:1 n:1 r:1 y:1 s:1 z:1 w:1 l:1 th:1 kh:1 ph:1 h:1
+V = a:10 e:10 i:10 o:10 u:10 ai:1 ui:1 oi:1 ee:1 ii:1
+R = r:1 n:1 s:1
+F = s:1 t:1 n:1 m:1 r:1 k:1
+
+random-rate: 35
+
+words: C?VF? C?VR?CVF? C?VR?CVR?CVF?
