@@ -1,0 +1,6 @@
+C = p:1 t:1 k:1 w:1 n:1 m:1 s:1 r:1 l:1 j:1 pw:1 kw:1
+V = a:10 e:10 i:10 o:10 u:10 ai:2 ei:2 oi:2
+
+random-rate: 50
+
+words: C?VCV? C?VCVCV? C?VCVCVCV?
