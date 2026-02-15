@@ -1,0 +1,49 @@
+Class c {b, d, g, p, t, k, th, dh, n, m, r, l, s, z, j, h, f, w, qu, ð, þ}
+Class v {a, e, i, o, u, y, á, é, í, ó, ú, ý, ô, æ, ø, ā, ē, ī, ō, ū}
+
+pre:
+    r => * / @c _ $
+
+v:
+    {ó, ú} => {ua, ú}
+    é => ea // _ $
+    e => a / _ {r, g}
+    {au, ei, ey} => {u, ei, ao}
+    {já, jó, jú, jǫ, ja} => {dheá, dhua, dhiu, dheo, dhea} / $ _
+    {já, jó, jú, jǫ, ja} => {eá, iua, iu, eo, ea}
+    then: {jua, ju} => {iua, iu} // r _
+    then: {jua, ju} => {ú, u} / r _
+    then: {i, e} => ea / _ @c @c // _ {dh, th, ch, gh, bh}
+    then: i => io / _ {p, b, t, d, c, g, s, f}
+    at => á / _ $
+    æ => ea // _ $
+    then: æ => í / _ $
+    ǫ => o
+
+c:
+    k => c
+    hv => f
+    {ð, þ} => {dh, th}
+    {hl, hr} => {ll, cr}
+    f => bh / @v _ @v
+    fn => bhann / _ $
+    v => b / $ _
+    sv => sp
+    then: f => bh / _ $
+    g => i / _ @c $
+    rl => ll
+    cv => ch
+    then: {pp, tt, cc} => {p, cht, ch}
+    ur => a / _ $
+
+p:
+    {ing, ung} => a / _ $
+    ig => é / $ @c _ $
+    ig => ach / _ $
+    iog => ach / _ $
+    {in, inn, idh} => {a, an, adh} / _ $
+    then: ungreann => an / _ $
+    then: ua => o / _ @c @c // _ {dh, th, ch, gh, bh}
+    then: uá => ú
+    {g, d} => {gh, dh} / @v _ @c
+    then: hh => h

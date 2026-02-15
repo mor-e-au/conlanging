@@ -1,0 +1,41 @@
+Class c {b, d, g, p, t, k, th, dh, n, m, r, l, s, z, j, h, f, w, qu, v, c}
+Class v {a, e, i, o, u, y, á, é, í, ó, ú, ý, ô, æ, ø, ā, ē, ī, ō, ū}
+Class l {l, r}
+
+pre:
+    au => au / _ {g, k, $}
+    then: au => ô
+
+v:
+    á => au / _ {l, ou, g, k, $}
+    then: á => ô
+    e => è / _ @c $
+    then: e => è / _ @c e $
+    é => ie / _ $
+    {í, ó, ú, y, ý} => {î, ou, u, u, û}
+    æ => ai / _ {$, @c @v}
+    then: æ => è
+    ø => eu
+    ei => ai
+    ey => oi
+    ǫ => o
+    {k, kk} => c
+    then: c => ch / _ {i, e, è, é, î}
+    then: cc => c
+    then: ca => que / _ $
+    then: {a, i} => e / @c _ $
+
+pc:
+    r => * / @c _ $ // @c @c _ $
+    then: r => re / _ $
+
+c:
+    es => ê / @c _ @c
+    {þ, ð} => {t, d}
+    then: s => es / $ _ @c
+    {hva, hve, hvi, hví} => {hoi, hoî, houi, houî}
+    f => v / @v _ @v
+
+p:
+    ér => èr
+    il => eu
